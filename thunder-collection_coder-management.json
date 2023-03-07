@@ -1,0 +1,266 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "coder-management",
+    "dateExported": "2023-03-07T16:00:25.055Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b926c5cb-3dd8-48f2-95d2-b36ec19765b8",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-03-05T08:52:49.050Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4ea2bbfc-418e-45a7-9aed-29893faf635d",
+            "name": "Task",
+            "containerId": "",
+            "created": "2023-03-05T09:00:36.275Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0ea07a23-7bd1-4e24-8a29-851734552ef6",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "b926c5cb-3dd8-48f2-95d2-b36ec19765b8",
+            "name": "Get a list of users",
+            "url": "http://localhost:8000/api/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-05T04:48:14.176Z",
+            "modified": "2023-03-07T10:41:40.458Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3a43a199-cfb4-49fb-83ba-00b8a348b9ec",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "b926c5cb-3dd8-48f2-95d2-b36ec19765b8",
+            "name": "Create a user",
+            "url": "http://localhost:8000/api/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-05T05:30:59.980Z",
+            "modified": "2023-03-05T09:06:29.288Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"name\": \"hello\" , \"role\":\"employee\"}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ba0e5710-0035-48ac-b28d-5953d793386f",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "b926c5cb-3dd8-48f2-95d2-b36ec19765b8",
+            "name": "Get a user by Id",
+            "url": "http://localhost:8000/api/users/{id}",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-05T06:20:34.343Z",
+            "modified": "2023-03-05T08:52:53.887Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64044a9a12fcf66ecc2a88c0",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b7bca579-20d2-47d4-affb-529ce0c6c847",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "b926c5cb-3dd8-48f2-95d2-b36ec19765b8",
+            "name": "Delete a user by Id",
+            "url": "http://localhost:8000/api/users/{id}",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-03-05T08:06:06.873Z",
+            "modified": "2023-03-05T08:52:54.800Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64044a9a12fcf66ecc2a88c0",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6c7590d0-44ad-48df-a542-88694ee4faae",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "4ea2bbfc-418e-45a7-9aed-29893faf635d",
+            "name": "Create a task",
+            "url": "http://localhost:8000/api/tasks",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-05T09:00:52.100Z",
+            "modified": "2023-03-07T13:10:55.242Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"name\": \"task5\", \"description\" : \"task is pending\", \"status\": \"pending\"}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a11973e-7aa6-48f2-ac12-b6e05c843424",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "4ea2bbfc-418e-45a7-9aed-29893faf635d",
+            "name": "Get a list of tasks",
+            "url": "http://localhost:8000/api/tasks?sortBy&sortOrder&name&description&status",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-05T09:17:57.811Z",
+            "modified": "2023-03-06T04:56:10.593Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "sortBy",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sortOrder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "status",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bbe747be-fab1-47c3-be85-567d5a9ce951",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "b926c5cb-3dd8-48f2-95d2-b36ec19765b8",
+            "name": "Get all tasks from a user",
+            "url": "http://localhost:8000/api/users/{id}/tasks",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-03-05T09:44:14.087Z",
+            "modified": "2023-03-07T11:41:58.473Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64044aae12fcf66ecc2a88c2",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d33cd74c-5ac0-4045-b519-a10ef81d4ca9",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "4ea2bbfc-418e-45a7-9aed-29893faf635d",
+            "name": "Delete a task",
+            "url": "http://localhost:8000/api/tasks/{id}",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-03-06T04:54:24.746Z",
+            "modified": "2023-03-06T04:55:06.323Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64045d5ee31bc171b9b12ffc",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "dc845efe-24fd-4e3d-b535-2ffd9c8f4ea5",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "4ea2bbfc-418e-45a7-9aed-29893faf635d",
+            "name": "Assign / Unassign a task",
+            "url": "http://localhost:8000/api/tasks/{id}",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-03-06T06:04:11.059Z",
+            "modified": "2023-03-07T13:34:41.485Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64045d5ee31bc171b9b12ffc",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"64044aae12fcf66ecc2a88c4\",\n  \"type\": \"Unassign\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d2ad13cb-27cd-404a-9864-f8393c887b4f",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "4ea2bbfc-418e-45a7-9aed-29893faf635d",
+            "name": "Get a task by Id",
+            "url": "http://localhost:8000/api/tasks/{id}",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-03-06T07:48:54.310Z",
+            "modified": "2023-03-06T07:52:34.611Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64045e71a0426ce40560ebf2",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3946e665-cdde-4301-8f8d-a42243ada2f1",
+            "colId": "50a785be-e6a4-43de-be3f-41eab3596d2d",
+            "containerId": "4ea2bbfc-418e-45a7-9aed-29893faf635d",
+            "name": "Update a task",
+            "url": "http://localhost:8000/api/tasks/{id}",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-03-07T13:25:06.416Z",
+            "modified": "2023-03-07T13:30:08.428Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64045e71a0426ce40560ebf2",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\"name\": \"task5\", \"description\" : \"task is pending\", \"status\": \"pending\"}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
